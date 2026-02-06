@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEGEM Learning - Kenyan Digital Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-title">
+                <h1>WEGEM <span>Learning</span></h1>
+                <p>Kenya's Premier Digital Learning Platform</p>
+            </div>
+            <div class="loading-images" id="subject-slideshow">
+                <!-- Images will be dynamically added -->
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p>Loading your learning experience...</p>
+            </div>
+        </div>
+        <div class="watermark">WEGEM Learning</div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <h1><i class="fas fa-graduation-cap"></i> WEGEM <span>Learning</span></h1>
+                </div>
+                <nav class="main-nav">
+                    <button class="nav-btn" id="subject-btn"><i class="fas fa-book"></i> Subjects</button>
+                    <button class="nav-btn" id="grade-btn"><i class="fas fa-chalkboard-teacher"></i> Form/Grade</button>
+                    <button class="nav-btn" id="home-btn"><i class="fas fa-home"></i> Home</button>
+                </nav>
+                <div class="user-section">
+                    <span id="user-name">Guest</span>
+                    <button class="btn-logout" id="logout-btn"><i class="fas fa-sign-out-alt"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Registration Modal -->
+        <div id="registration-modal" class="modal">
+            <div class="modal-content">
+                <h2>Choose Your Curriculum</h2>
+                <div class="curriculum-options">
+                    <div class="curriculum-card" id="curriculum-844" data-curriculum="8-4-4">
+                        <div class="card-header" style="background: linear-gradient(135deg, #1E40AF, #DB2777, #A78BFA);">
+                            <h3>8-4-4 Curriculum</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fas fa-check-circle"></i> Traditional Kenyan System</p>
+                            <p><i class="fas fa-check-circle"></i> Forms 1-4</p>
+                            <p><i class="fas fa-check-circle"></i> KCSE Preparation</p>
+                        </div>
+                        <button class="btn-select">Select 8-4-4</button>
+                    </div>
+                    
+                    <div class="curriculum-card" id="curriculum-cbc" data-curriculum="CBC">
+                        <div class="card-header" style="background: linear-gradient(135deg, #3730A3, #FBBF24, #10B981, #EF4444);">
+                            <h3>CBC Curriculum</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><i class="fas fa-check-circle"></i> Competency Based</p>
+                            <p><i class="fas fa-check-circle"></i> Grades 1-12</p>
+                            <p><i class="fas fa-check-circle"></i> Skill Development Focus</p>
+                        </div>
+                        <button class="btn-select">Select CBC</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration forms and other content -->
+        <!-- ... [Rest of the HTML from earlier] ... -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
